@@ -11,7 +11,7 @@ interface ThemeColorsTypes {
 }
 
 export const themeColors: ThemeColorsTypes = {
-  primary: "#2e3333",
+  primary: "#00CCBC",
   secondary: "#2e3333",
   white: "#fff",
   disabledBg: "#e2e5e5",
