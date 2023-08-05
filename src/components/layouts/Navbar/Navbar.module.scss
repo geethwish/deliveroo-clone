@@ -1,0 +1,11 @@
+@import "../../../asset/scss/variables";
+
+.navbarContainer {
+  position: relative !important;
+  background-color: $white !important;
+  height: 72px;
+  display: flex !important;
+  justify-content: center;
+  border: none;
+  box-shadow: none !important;
+}

@@ -12,3 +12,12 @@ body {
 span {
   font-family: "IBM Plex Sans", sans-serif;
 }
+
+.MuiContainer-maxWidthXl {
+  max-width: calc(100% - 80px) !important;
+}
+
+.MuiContainer-maxWidthLg {
+  max-width: calc(100% - 465px) !important;
+  padding: 0 64px !important;
+}

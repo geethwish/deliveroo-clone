@@ -1,8 +1,12 @@
 import React from "react";
-import "./asset/scss/index.scss";
+import PageLayout from "./components/layouts/PageLayout/PageLayout";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <PageLayout size="lg"></PageLayout>
+    </div>
+  );
 }
 
 export default App;
