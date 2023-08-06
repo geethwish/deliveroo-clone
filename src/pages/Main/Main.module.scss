@@ -1,0 +1,53 @@
+.navigationSection {
+  padding: 16px 0;
+}
+
+.headerContent {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-areas: "image info";
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: auto;
+  padding-bottom: 32px;
+}
+
+.bannerSection {
+  width: 475px;
+  img {
+    width: 100%;
+  }
+}
+
+.categorySection {
+  padding-top: 8px;
+}
+
+.contentSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addressSection {
+  padding-top: 8px;
+}
+
+.infoSection {
+  padding-top: 16px;
+}
+
+.ratingSection {
+  padding-top: 16px;
+}
+
+.contentSectionRightPanel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.orderButton {
+  min-height: 40px;
+  padding: 8px 16px;
+}
+
+//   border-bottom: 1px solid #00000014;

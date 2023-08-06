@@ -12,7 +12,8 @@ import Button from "@mui/material/Button";
 import styles from "./Navbar.module.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "./../../../asset/images/svg/logo.svg";
-import { Search } from "@mui/icons-material";
+import { Home, Search } from "@mui/icons-material";
+import CottageOutlinedIcon from "@mui/icons-material/CottageOutlined";
 
 interface NavbarPropsType {
   size: "xs" | "sm" | "md" | "lg" | "xl";
@@ -50,6 +51,16 @@ const Navbar: FC<NavbarPropsType> = ({ size }) => {
           </div>
 
           <Box sx={{ flexGrow: 0 }}>
+            <Button
+              variant="outlined"
+              startIcon={<CottageOutlinedIcon color="primary" />}
+              disableRipple
+              color="primary"
+              className={styles.menuButton}
+            >
+              Sign up or log in
+            </Button>
+
             <Button
               variant="outlined"
               startIcon={<MenuIcon color="primary" />}

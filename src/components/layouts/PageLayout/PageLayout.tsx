@@ -22,9 +22,7 @@ const PageLayout: FC<PageLayoutTypes> = ({ size, children }) => {
     <>
       <Navbar size={size} />
       <Divider className={styles.divider} />
-      <div className={styles.content}>
-        <Container maxWidth={size}>{children}</Container>
-      </div>
+      <div className={styles.content}>{children}</div>
       <div className={styles.footerContainer}>
         <Container maxWidth={size}>footer</Container>
       </div>
