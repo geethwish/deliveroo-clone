@@ -5,15 +5,14 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Typography,
 } from "@mui/material";
-import product from "../../../../asset/images/prducts/product2.webp";
 import styles from "./ProductCard.module.scss";
 import { SingleProductType } from "../../slices/products.slice";
 
 interface ProductCarProps {
   data: SingleProductType;
 }
+
 const ProductCard: FC<ProductCarProps> = ({ data }) => {
   return (
     <CardActionArea>

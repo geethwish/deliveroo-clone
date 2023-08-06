@@ -24,6 +24,7 @@ const initialState: CounterState = {
 };
 
 export const getAllProducts = createAsyncThunk("products/getall", async () => {
+  // call api using axios
   const response = await fetchProducts();
 
   return response.data;
@@ -32,7 +33,6 @@ export const getAllProducts = createAsyncThunk("products/getall", async () => {
 export const counterSlice = createSlice({
   name: "products",
   initialState,
-  // The `reducers` field lets us define reducers and generate associated actions
   reducers: {},
 
   extraReducers: (builder) => {
@@ -50,8 +50,6 @@ export const counterSlice = createSlice({
       });
   },
 });
-
-// export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
 export const productApiStatus = (state: RootState) => state.products.status;
 export const allProducts = (state: RootState) =>

@@ -1,7 +1,8 @@
 import { createTheme } from "@mui/material";
 import { themeColors } from "../constants/colors";
-import { orange, red } from "@mui/material/colors";
+import { red } from "@mui/material/colors";
 
+// create themes and color palette
 const theme = createTheme({
   palette: {
     primary: { main: themeColors.primary },
