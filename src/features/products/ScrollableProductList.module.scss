@@ -1,0 +1,21 @@
+.contentWrapper {
+  margin-top: 32px;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-gap: 32px 24px;
+  grid-template-areas: "menu";
+  grid-template-columns: 70% 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.content {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}

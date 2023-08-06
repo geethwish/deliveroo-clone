@@ -66,3 +66,26 @@ span {
 .ml-1 {
   margin-left: 10px;
 }
+
+.pt-04 {
+  padding-top: 4px;
+}
+
+.p0 {
+  padding: 0px !important;
+}
+
+.sub-text {
+  color: #585c5c;
+  line-height: 22px;
+}
+
+.disabled {
+  color: #abadad !important;
+  p {
+    color: #abadad !important;
+  }
+  svg {
+    color: #abadad !important;
+  }
+}

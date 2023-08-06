@@ -1,0 +1,21 @@
+@import "./variables";
+
+.custom-tag {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  height: 24px !important;
+  padding: 2px 16px !important;
+  .MuiChip-label {
+    padding: 0 !important;
+  }
+}
+
+.custom-tag-deselected {
+  background-color: #fff !important;
+  font-weight: 400;
+  .MuiChip-label {
+    color: $primary;
+    padding: 0 !important;
+  }
+}

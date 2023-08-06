@@ -1,0 +1,14 @@
+.wrapper {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.titleSection {
+  margin-bottom: 16px;
+}
+
+.productsWrapper {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: auto auto;
+}
