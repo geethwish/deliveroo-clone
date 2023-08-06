@@ -10,7 +10,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "@mui/material/styles";
 import "./asset/scss/index.scss";
 import { BrowserRouter } from "react-router-dom";
-import history from "./history";
+import mockServer from "./mock/api";
+
+mockServer({ environment: "development" });
 const container = document.getElementById("root")!;
 const root = createRoot(container);
 

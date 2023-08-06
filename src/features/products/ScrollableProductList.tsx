@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Box,
@@ -12,13 +12,36 @@ import {
 import styles from "./ScrollableProductList.module.scss";
 import CategoryProductsList from "./components/CategoryProductsList/CategoryProductsList";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import {
+  SingleProductType,
+  allProducts,
+  getAllProducts,
+} from "./slices/products.slice";
 
 const ScrollableProductList = () => {
+  const dispatch = useAppDispatch();
+  const productsList = useAppSelector(allProducts);
+
   const [clickedCategory, setClickedCategory] = useState("");
 
   const handleClick = (key: string) => {
     setClickedCategory((prev) => (prev === key ? "" : key));
   };
+
+  useEffect(() => {
+    dispatch(getAllProducts());
+
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+    productsList !== undefined &&
+      Object.keys(productsList).length > 0 &&
+      Object.keys(productsList).map((productCategory, index) => {
+        console.log(Object.keys(productsList));
+      });
+  }, [productsList]);
 
   return (
     <div>
@@ -53,8 +76,19 @@ const ScrollableProductList = () => {
           </div>
           <div className={styles.contentWrapper}>
             <div>
-              <CategoryProductsList title="Bundle" />
-              <CategoryProductsList title="Salad" />
+              {productsList !== undefined &&
+                Object.keys(productsList).length > 0 &&
+                Object.keys(productsList).map((productCategory, index) => (
+                  <CategoryProductsList
+                    title={productCategory}
+                    key={index}
+                    product={
+                      productsList[
+                        productCategory
+                      ] as unknown as SingleProductType[]
+                    }
+                  />
+                ))}
             </div>
 
             <div>
