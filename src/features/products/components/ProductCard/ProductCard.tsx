@@ -20,7 +20,9 @@ const ProductCard: FC<ProductCarProps> = ({ data }) => {
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <CardContent sx={{ flex: "1 0 auto" }} className="p0">
             <p className="weight-600">{data?.name}</p>
-            <div className="pt-04 sub-text font-14">{data?.description}</div>
+            <div className="pt-04 sub-text font-14 text-line1 ">
+              {data?.description}
+            </div>
 
             <div className="pt-04 sub-text font-16 ">{data?.price}</div>
           </CardContent>

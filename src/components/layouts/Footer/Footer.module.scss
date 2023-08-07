@@ -1,0 +1,19 @@
+@import "../../../asset/scss/variables";
+
+.container {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerCard {
+  flex: 1;
+  padding: 24px;
+  min-height: 200px;
+  background: $dark-light-bg;
+  color: #fff;
+  row-gap: 10px;
+  margin-right: 16px;
+  border-radius: 4px;
+}

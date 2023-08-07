@@ -1,7 +1,8 @@
 import React, { FC, ReactElement, ReactFragment, ReactPortal } from "react";
 import styles from "./PageLayout.module.scss";
-import { Container, Divider } from "@mui/material";
+import { Container } from "@mui/material";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 type ReactText = string | number;
 type ReactChild = ReactElement | ReactText;
@@ -23,7 +24,9 @@ const PageLayout: FC<PageLayoutTypes> = ({ size, children }) => {
       <Navbar size={size} />
       <div className={styles.content}>{children}</div>
       <div className={styles.footerContainer}>
-        <Container maxWidth={size}>footer</Container>
+        <Container maxWidth={"lg"}>
+          <Footer />
+        </Container>
       </div>
     </>
   );

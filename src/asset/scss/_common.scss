@@ -89,3 +89,10 @@ span {
     color: #abadad !important;
   }
 }
+
+.text-line1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 400px;
+}
