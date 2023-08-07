@@ -23,9 +23,14 @@ const ScrollableProductList = () => {
   const dispatch = useAppDispatch();
   const productsList = useAppSelector(allProducts);
 
-  const [clickedCategory, setClickedCategory] = useState("");
+  const [clickedCategory, setClickedCategory] = useState("Bundles");
 
-  const handleClick = (key: string) => {
+  const handleClick = (key: string, id: number) => {
+    const element = document.getElementById(`section${id}`);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+
     setClickedCategory((prev) => (prev === key ? "" : key));
   };
 
@@ -43,28 +48,37 @@ const ScrollableProductList = () => {
       });
   }, [productsList]);
 
+  const handleScrolledPosition = (key: string) => {
+    setClickedCategory(key);
+  };
+
   return (
     <div>
       <AppBar
         component="menu"
-        className={styles.navbarContainer}
+        className={`${styles.navbarContainer} ${styles.fixedContainer}`}
         color="inherit"
         position="relative"
       >
         <Container maxWidth={"xl"}>
           <Toolbar disableGutters className={styles.navbarContainer}>
             <Box sx={{ flexGrow: 1 }}>
-              <Chip
-                label="Clickable"
-                variant="filled"
-                onClick={() => handleClick("bundle")}
-                color="primary"
-                className={`custom-tag ${
-                  clickedCategory === "bundle"
-                    ? "text-color-white"
-                    : "custom-tag-deselected"
-                }`}
-              />
+              {productsList !== undefined &&
+                Object.keys(productsList).length > 0 &&
+                Object.keys(productsList).map((productCategory, index) => (
+                  <Chip
+                    key={index}
+                    label={productCategory}
+                    variant="filled"
+                    onClick={() => handleClick(productCategory, index)}
+                    color="primary"
+                    className={`custom-tag ${
+                      clickedCategory === productCategory
+                        ? "text-color-white"
+                        : "custom-tag-deselected"
+                    }`}
+                  />
+                ))}
             </Box>
           </Toolbar>
         </Container>
@@ -80,6 +94,7 @@ const ScrollableProductList = () => {
                 Object.keys(productsList).length > 0 &&
                 Object.keys(productsList).map((productCategory, index) => (
                   <CategoryProductsList
+                    id={`section${index}`}
                     title={productCategory}
                     key={index}
                     product={
@@ -87,11 +102,12 @@ const ScrollableProductList = () => {
                         productCategory
                       ] as unknown as SingleProductType[]
                     }
+                    onFocusElement={handleScrolledPosition}
                   />
                 ))}
             </div>
 
-            <div>
+            <div className={styles.cartSection}>
               <Card className={styles.card}>
                 <CardContent>
                   <center className={styles.content}>

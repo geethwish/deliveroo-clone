@@ -1,13 +1,9 @@
 @import "../../../asset/scss/variables";
 
-.divider {
-  position: fixed;
-  width: 100%;
-}
-
 .content {
   background-color: $mainBg;
   min-height: calc(100vh - 372px);
+  margin-top: 70px;
 }
 
 .footerContainer {

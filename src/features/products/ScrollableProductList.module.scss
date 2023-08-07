@@ -4,7 +4,7 @@
 
 .contentWrapper {
   display: grid;
-  grid-gap: 32px 24px;
+  grid-gap: 0px 24px;
   grid-template-areas: "menu";
   grid-template-columns: 70% 1fr;
   grid-template-rows: auto 1fr;
@@ -18,4 +18,18 @@
 .content {
   padding-top: 32px;
   padding-bottom: 24px;
+}
+
+.fixedContainer {
+  top: 72px !important;
+  position: sticky !important;
+  z-index: 100;
+}
+
+.cartSection {
+  position: sticky !important;
+  top: calc(73px + 32px + 73px);
+  align-self: start;
+  overflow: hidden;
+  position: sticky;
 }

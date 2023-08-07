@@ -21,7 +21,6 @@ const PageLayout: FC<PageLayoutTypes> = ({ size, children }) => {
   return (
     <>
       <Navbar size={size} />
-      <Divider className={styles.divider} />
       <div className={styles.content}>{children}</div>
       <div className={styles.footerContainer}>
         <Container maxWidth={size}>footer</Container>

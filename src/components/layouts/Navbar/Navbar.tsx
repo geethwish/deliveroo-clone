@@ -23,7 +23,7 @@ const Navbar: FC<NavbarPropsType> = ({ size }) => {
   return (
     <AppBar component="nav" className={styles.navbarContainer} color="inherit">
       <Container maxWidth={size}>
-        <Toolbar disableGutters className={styles.navbarContainer}>
+        <Toolbar disableGutters className={styles.container}>
           <div className={styles.logo}>
             <img src={logo} alt={"logo"} loading="lazy" />
           </div>
