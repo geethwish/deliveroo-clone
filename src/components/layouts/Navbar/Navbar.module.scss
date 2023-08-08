@@ -61,3 +61,16 @@
   margin-right: 20px;
   color: #2e3333 !important;
 }
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-top: 100%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+.container {
+  width: 375px;
+  min-height: 100%;
+
+  overflow: none;
+}
+
+.titleSection {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentContainer {
+  padding: 16px;
+  height: calc(100% - 85px);
+}

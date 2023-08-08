@@ -10,6 +10,8 @@ function App() {
     const path = location.pathname;
     if (path === "/login" || path === "/sign-up") {
       setLayoutSize("lg");
+    } else {
+      setLayoutSize("xl");
     }
     return () => {};
   }, [location]);
