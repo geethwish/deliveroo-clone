@@ -12,3 +12,12 @@
   grid-gap: 24px;
   grid-template-columns: auto auto;
 }
+
+.modalHeader {
+  width: 600px;
+  img {
+    background-size: cover;
+    width: 100%;
+    // position: absolute;
+  }
+}
