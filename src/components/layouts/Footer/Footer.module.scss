@@ -5,6 +5,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  row-gap: 16px;
+  @media only screen and (min-width: 540px) and (max-width: 959px) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 
 .footerCard {
@@ -16,4 +27,35 @@
   row-gap: 10px;
   margin-right: 16px;
   border-radius: 4px;
+  min-width: 224px;
+}
+
+.appLogosWrapper {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-top: 8px;
+}
+
+.socialIconsContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  svg {
+    margin-right: 16px;
+    fill: #fff;
+  }
+}
+
+.facebook:hover {
+  fill: #1877f2;
+}
+
+.twitter:hover {
+  fill: #55acee;
+}
+
+.instagram:hover {
+  fill: #f00075;
 }
