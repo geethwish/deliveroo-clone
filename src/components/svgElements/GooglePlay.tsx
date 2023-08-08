@@ -5,14 +5,14 @@ const GooglePlay = () => {
     <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40">
       <defs>
         <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop stop-color="#00C3FF" offset="3.938%" />
-          <stop stop-color="#00E1FF" offset="97.744%" />
+          <stop stopColor="#00C3FF" offset="3.938%" />
+          <stop stopColor="#00E1FF" offset="97.744%" />
         </linearGradient>
         <linearGradient id="b" x1="80.747%" x2="-156.778%" y1="50%" y2="50%">
-          <stop stop-color="#FDDE31" offset="0%" />
-          <stop stop-color="#FABC31" offset="40%" />
-          <stop stop-color="#F8A431" offset="77%" />
-          <stop stop-color="#F79B31" offset="100%" />
+          <stop stopColor="#FDDE31" offset="0%" />
+          <stop stopColor="#FABC31" offset="40%" />
+          <stop stopColor="#F8A431" offset="77%" />
+          <stop stopColor="#F79B31" offset="100%" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -21,8 +21,8 @@ const GooglePlay = () => {
           y1="17.813%"
           y2="194.699%"
         >
-          <stop stop-color="#FF3A44" offset="0%" />
-          <stop stop-color="#C4206D" offset="100%" />
+          <stop stopColor="#FF3A44" offset="0%" />
+          <stop stopColor="#C4206D" offset="100%" />
         </linearGradient>
       </defs>
 
@@ -32,7 +32,7 @@ const GooglePlay = () => {
           <path
             fill="#fff"
             stroke="#fff"
-            stroke-width=".2"
+            strokeWidth=".2"
             d="M47.42 10.24c.03.74-.24 1.46-.75 2-.57.6-1.37.92-2.2.9-1.27-.02-2.4-.8-2.9-1.96-.47-1.17-.2-2.52.7-3.42.57-.6 1.37-.92 2.2-.9.42 0 .84.08 1.23.25.36.16.68.4.94.68l-.53.53c-.4-.47-1-.73-1.63-.7-.63 0-1.24.25-1.68.7-.45.46-.68 1.07-.66 1.7 0 .95.55 1.82 1.42 2.2.88.38 1.9.2 2.58-.47.3-.33.5-.77.5-1.22h-2.17v-.7h2.9c.04.14.05.3.05.44zM52 7.74h-2.7v1.9h2.46v.72H49.3v1.9H52V13h-3.5V7H52zM55.28 13h-.77V7.74h-1.67V7H57v.74h-1.72zm4.66 0V7h.77v6zm4.19 0h-.77V7.74h-1.68V7h4.12v.74h-1.67zm9.47-.78c-1.2 1.2-3.17 1.2-4.4 0a3.26 3.26 0 0 1 0-4.45c.6-.6 1.38-.92 2.2-.92.84 0 1.63.33 2.2.92a3.2 3.2 0 0 1 0 4.45zm-3.82-.5c.9.9 2.36.9 3.26 0 .9-.98.9-2.46 0-3.44-.9-.9-2.36-.9-3.26 0-.9.98-.9 2.46 0 3.44zm5.8 1.28V7h.94l2.92 4.67V7h.77v6h-.8l-3.04-4.9V13z"
           />
           <path

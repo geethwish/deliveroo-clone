@@ -5,14 +5,14 @@ const AppLogs = () => {
     <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40">
       <defs>
         <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop stop-color="#00C3FF" offset="3.938%" />
-          <stop stop-color="#00E1FF" offset="97.744%" />
+          <stop stopColor="#00C3FF" offset="3.938%" />
+          <stop stopColor="#00E1FF" offset="97.744%" />
         </linearGradient>
         <linearGradient id="b" x1="80.747%" x2="-156.778%" y1="50%" y2="50%">
-          <stop stop-color="#FDDE31" offset="0%" />
-          <stop stop-color="#FABC31" offset="40%" />
-          <stop stop-color="#F8A431" offset="77%" />
-          <stop stop-color="#F79B31" offset="100%" />
+          <stop stopColor="#FDDE31" offset="0%" />
+          <stop stopColor="#FABC31" offset="40%" />
+          <stop stopColor="#F8A431" offset="77%" />
+          <stop stopColor="#F79B31" offset="100%" />
         </linearGradient>
         <linearGradient
           id="c"
@@ -21,8 +21,8 @@ const AppLogs = () => {
           y1="17.813%"
           y2="194.699%"
         >
-          <stop stop-color="#FF3A44" offset="0%" />
-          <stop stop-color="#C4206D" offset="100%" />
+          <stop stopColor="#FF3A44" offset="0%" />
+          <stop stopColor="#C4206D" offset="100%" />
         </linearGradient>
       </defs>
       <g fill="none">

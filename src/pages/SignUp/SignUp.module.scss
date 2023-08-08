@@ -1,0 +1,47 @@
+.mainContainer {
+  padding: 64px 16px;
+}
+
+.container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  row-gap: 16px;
+}
+
+.title {
+  font-size: 22px !important;
+  line-height: 28px !important;
+  font-weight: 700 !important;
+}
+
+.fromController {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  justify-content: start;
+  width: 100%;
+  label {
+    text-align: start;
+  }
+}
+
+.inputField {
+  height: 48px !important;
+}
+
+.continueButton {
+  border: none !important;
+  color: #fff;
+  height: 48px !important;
+}
+
+.commonButton {
+  text-transform: capitalize;
+}
+
+.outlineButton:hover {
+  background-color: #f9fafa;
+}

@@ -1,0 +1,108 @@
+.mainContainer {
+  padding: 64px 16px;
+}
+
+.container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  row-gap: 16px;
+}
+
+.title {
+  font-size: 22px !important;
+  line-height: 28px !important;
+  font-weight: 700 !important;
+}
+
+.facebookButton {
+  margin-right: 0px !important;
+  width: 100% !important;
+  background-color: #4c69ba;
+  color: #fff;
+  font-family: plex-sans, sans-serif !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 48px;
+  border-radius: 4px;
+  svg {
+    fill: #fff;
+    margin-right: 8px;
+  }
+}
+
+.facebookButton:hover {
+  background-color: #4c69ba !important;
+  color: #fff;
+}
+
+.googleButton {
+  font-family: plex-sans, sans-serif !important;
+  color: #000 !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 48px;
+  border-radius: 4px;
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.appleButton {
+  font-family: plex-sans, sans-serif !important;
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 48px;
+  background-color: #000;
+  border-radius: 4px;
+  svg {
+    fill: #fff;
+    margin-right: 8px;
+  }
+}
+
+.separator {
+  width: 100%;
+}
+
+.line {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.emailButton {
+  font-family: plex-sans, sans-serif !important;
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 48px;
+  background-color: #00ccbc;
+  border-radius: 4px;
+  svg {
+    fill: #fff;
+    margin-right: 8px;
+  }
+}
+
+.emailButton:hover {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 48px;
+  background-color: #00ccbc;
+  border-radius: 4px;
+}
+
+.terms {
+  color: #585c5c;
+  vertical-align: baseline;
+  text-align: start;
+  font-size: 12px !important;
+}
+
+.link {
+  color: #00ccbc;
+}

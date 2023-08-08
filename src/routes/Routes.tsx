@@ -1,12 +1,17 @@
-import React, { Suspense } from "react";
+import React, { Suspense, lazy } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { JSX } from "react/jsx-runtime";
-import Main from "../pages/Main/Main";
+
+const Home = lazy(() => import("../pages/Main/Main"));
+const Login = lazy(() => import("../pages/Login/Login"));
+const SignUp = lazy(() => import("../pages/SignUp/SignUp"));
 
 const RoutesList = () => {
   return (
     <Routes>
-      <Route path="/" element={<Main />}></Route>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/sign-up" element={<SignUp />}></Route>
     </Routes>
   );
 };
