@@ -21,3 +21,126 @@
     // position: absolute;
   }
 }
+
+.actionWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px !important;
+  button {
+    margin-right: 0;
+  }
+}
+
+.number {
+  font-size: 24px;
+  color: #abadad;
+}
+
+.size24 {
+  font-size: 24px;
+
+  svg {
+    width: 24px;
+  }
+}
+
+.incrementSection {
+  width: 200px;
+  padding-bottom: 24px;
+}
+
+.incrementButtonsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: #2e3333;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+  font-family: plex-sans, sans-serif !important;
+}
+
+.dividerSpace {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #585c5c;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.customButton {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  padding-left: 0px;
+}
+
+.subtitle1 {
+  color: #585c5c;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.requiredText {
+  color: #585c5c;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.customRadioGroup {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.customRadioGroupLabel {
+  display: flex !important;
+  align-items: self-start !important;
+
+  .MuiFormControlLabel-label {
+    width: 90%;
+  }
+}
+
+.radioButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.description {
+  font-size: 14px !important;
+  text-align: justify;
+  width: 95%;
+}
+
+.checkBoxLabelContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .MuiFormControlLabel-label {
+    width: 100%;
+  }
+}
+
+.checkboxDescription {
+  font-size: 14px !important;
+}
+
+.priceTag {
+  width: 60px;
+}
+
+.margin16 {
+  margin-top: 16px;
+}
+.disabled {
+  color: #abadad !important;
+}

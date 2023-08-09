@@ -38,3 +38,12 @@ ul {
   text-transform: capitalize !important;
   margin-top: 16px !important;
 }
+
+.customCheckboxLabel {
+  display: flex !important;
+  align-items: self-start !important;
+  width: 100% !important;
+  .MuiFormControlLabel-label {
+    width: 100% !important;
+  }
+}

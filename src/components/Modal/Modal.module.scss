@@ -13,24 +13,13 @@
   background-color: #fff;
 }
 
+.modalContentContainer {
+  max-height: 760px;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+}
+
 .contentWrapper {
   padding: 16px;
   border-top: none;
-}
-
-.title {
-  color: #2e3333;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: bold;
-  font-family: plex-sans, sans-serif !important;
-}
-
-.actionWrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 16px !important;
-  button {
-    margin-right: 0;
-  }
 }
