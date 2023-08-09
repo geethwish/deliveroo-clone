@@ -33,3 +33,10 @@
   overflow: hidden;
   position: sticky;
 }
+
+@media only screen and (max-width: 540px) {
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

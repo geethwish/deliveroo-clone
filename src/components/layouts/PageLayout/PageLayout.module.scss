@@ -10,3 +10,9 @@
   background-color: $secondary;
   min-height: 300px;
 }
+
+@media only screen and (max-width: 540px) {
+  .content {
+    width: fit-content;
+  }
+}

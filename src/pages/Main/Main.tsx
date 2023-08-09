@@ -13,7 +13,7 @@ import ScrollableProductList from "../../features/products/ScrollableProductList
 
 const Main = () => {
   return (
-    <div>
+    <>
       <div className={styles.bgWhite}>
         <Container maxWidth="xl">
           <div className={styles.navigationSection}>
@@ -126,7 +126,7 @@ const Main = () => {
       </div>
 
       <ScrollableProductList />
-    </div>
+    </>
   );
 };
 
