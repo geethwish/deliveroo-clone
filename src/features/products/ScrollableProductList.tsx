@@ -18,9 +18,14 @@ import {
   allProducts,
   getAllProducts,
 } from "./slices/products.slice";
+import { loginStatus } from "../../app/slices/login.slice";
+import { useNavigate } from "react-router-dom";
 
 const ScrollableProductList = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+
+  const isAuthorized = useAppSelector(loginStatus);
   const productsList = useAppSelector(allProducts);
 
   const [clickedCategory, setClickedCategory] = useState("Bundles");
@@ -32,6 +37,10 @@ const ScrollableProductList = () => {
     }
 
     setClickedCategory((prev) => (prev === key ? "" : key));
+  };
+
+  const handleCheckout = () => {
+    navigate("/home/checkout");
   };
 
   useEffect(() => {
@@ -116,7 +125,12 @@ const ScrollableProductList = () => {
                       <p>Your basket is empty</p>
                     </div>
                   </center>
-                  <Button variant="contained" fullWidth disabled>
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    disabled={isAuthorized === "unauthorized"}
+                    onClick={handleCheckout}
+                  >
                     <span className="capitalize">Go to checkout</span>
                   </Button>
                 </CardContent>
