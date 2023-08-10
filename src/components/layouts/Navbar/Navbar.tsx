@@ -78,13 +78,13 @@ const Navbar: FC<NavbarPropsType> = ({ size }) => {
             </div>
           )}
 
-          <Box sx={{ flexGrow: 0 }}>
+          <div>
             <Button
               variant="outlined"
               startIcon={<CottageOutlinedIcon color="primary" />}
               disableRipple
               color="primary"
-              className={styles.menuButton}
+              className={`${styles.menuButton} hideOnMobileView`}
               onClick={navigateToLogin}
             >
               {isAuthorized === "authorized" ? "Logout" : "Sign up or log in"}
@@ -100,7 +100,7 @@ const Navbar: FC<NavbarPropsType> = ({ size }) => {
             >
               Account
             </Button>
-          </Box>
+          </div>
         </Toolbar>
       </Container>
 

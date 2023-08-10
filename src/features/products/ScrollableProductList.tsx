@@ -62,7 +62,7 @@ const ScrollableProductList = () => {
       >
         <Container maxWidth={"xl"}>
           <Toolbar disableGutters className={styles.navbarContainer}>
-            <Box sx={{ flexGrow: 1 }}>
+            <div className={styles.tags}>
               {productsList !== undefined &&
                 Object.keys(productsList).length > 0 &&
                 Object.keys(productsList).map((productCategory, index) => (
@@ -79,7 +79,7 @@ const ScrollableProductList = () => {
                     }`}
                   />
                 ))}
-            </Box>
+            </div>
           </Toolbar>
         </Container>
       </AppBar>

@@ -17,21 +17,24 @@ const ProductCard: FC<ProductCarProps> = ({ data }) => {
   return (
     <CardActionArea>
       <Card className={styles.card}>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
-          <CardContent sx={{ flex: "1 0 auto" }} className="p0">
-            <p className="weight-600">{data?.name}</p>
-            <div className="pt-04 sub-text font-14 text-line1 ">
-              {data?.description}
-            </div>
+        <CardContent
+          sx={{ flex: "1 0 auto" }}
+          className={`p0 ${styles.cardContent}`}
+        >
+          <p className="weight-600">{data?.name}</p>
+          <div className="pt-04 sub-text font-14 text-line1 ">
+            {data?.description}
+          </div>
 
-            <div className="pt-04 sub-text font-16 ">{data?.price}</div>
-          </CardContent>
-        </Box>
+          <div className="pt-04 sub-text font-16 ">{data?.price}</div>
+        </CardContent>
+
         <CardMedia
           component="img"
           sx={{ width: 98, height: 98 }}
           image={require(`../../../../asset/images/prducts/${data.img}`)}
           alt="green iguana"
+          className={styles.productImage}
         />
       </Card>
     </CardActionArea>

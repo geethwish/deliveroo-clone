@@ -119,3 +119,12 @@ p {
 .weight-600 {
   font-weight: 600 !important;
 }
+
+@media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+    color: $secondary !important;
+    font-family: "Stratos", sans-serif !important;
+  }
+}

@@ -1,20 +1,11 @@
 @import "./variables";
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100% !important;
+html {
   height: 100%;
 }
 
-html,
-body,
-#root {
+div#root {
   height: 100%;
-  position: absolute;
 }
 
 body {
@@ -108,12 +99,37 @@ span {
 }
 
 .text-line1 {
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  width: 400px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .pt-30 {
   padding-top: 16px;
+}
+
+.hideOnMobileView {
+  display: inline-flex !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .hideOnMobileView {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .hideOnMobileView {
+    display: none !important;
+  }
+  .display-column {
+    min-width: 80%;
+  }
+}
+
+.display-column {
+  display: flex;
+  flex-direction: column;
 }

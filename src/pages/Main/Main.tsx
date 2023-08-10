@@ -14,13 +14,13 @@ import ScrollableProductList from "../../features/products/ScrollableProductList
 const Main = () => {
   return (
     <>
-      <div className={styles.bgWhite}>
+      <div className={`${styles.bgWhite} header-container`}>
         <Container maxWidth="xl">
           <div className={styles.navigationSection}>
             <Button
               type="button"
               startIcon={<KeyboardBackspaceIcon />}
-              className="linkButton top-bottom-p-0"
+              className="linkButton top-bottom-p-0 hideOnMobileView"
             >
               Back
             </Button>
@@ -53,7 +53,7 @@ const Main = () => {
                 <div className={styles.infoSection}>
                   <Button
                     type="button"
-                    className="linkButton top-bottom-p-0"
+                    className="linkButton top-bottom-p-0 mobile-button"
                     endIcon={<ArrowForwardIosOutlinedIcon color="primary" />}
                     startIcon={
                       <InfoOutlinedIcon
@@ -74,7 +74,7 @@ const Main = () => {
                 <div className={styles.ratingSection}>
                   <Button
                     type="button"
-                    className="linkButton text-color-dark top-bottom-p-0"
+                    className="linkButton text-color-dark top-bottom-p-0 mobile-button"
                     endIcon={<ArrowForwardIosOutlinedIcon color="primary" />}
                     startIcon={
                       <StarIcon
