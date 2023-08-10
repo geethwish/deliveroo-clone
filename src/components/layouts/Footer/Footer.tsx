@@ -5,7 +5,6 @@ import GooglePlay from "../../svgElements/GooglePlay";
 import FacebookIcon from "../../svgElements/FacebookIcon";
 import TwitterIcon from "../../svgElements/TwitterIcon";
 import InstagramIcon from "../../svgElements/InstagramIcon";
-import { Container } from "@mui/material";
 
 const Footer = () => {
   return (
