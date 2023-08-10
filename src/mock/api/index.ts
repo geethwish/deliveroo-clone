@@ -2,8 +2,6 @@ import { Model, Server } from "miragejs";
 import { mockProducts } from "../data/products";
 
 export default function mockServer({ environment = "development" }) {
-  console.log("here");
-
   return new Server({
     environment,
     seeds(server) {

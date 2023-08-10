@@ -48,14 +48,6 @@ const ScrollableProductList = () => {
     return () => {};
   }, []);
 
-  useEffect(() => {
-    productsList !== undefined &&
-      Object.keys(productsList).length > 0 &&
-      Object.keys(productsList).map((productCategory, index) => {
-        console.log(Object.keys(productsList));
-      });
-  }, [productsList]);
-
   const handleScrolledPosition = (key: string) => {
     setClickedCategory(key);
   };

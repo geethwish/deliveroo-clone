@@ -51,10 +51,6 @@ const CategoryProductsList: FC<CategoryProductsListProps> = ({
 
   const handleSubmit = () => {};
 
-  useEffect(() => {
-    console.log(open);
-  }, [open]);
-
   return (
     <Waypoint
       key={id}
